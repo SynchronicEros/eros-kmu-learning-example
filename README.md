@@ -18,8 +18,9 @@
 
 ## 快速開始
 
-1. **Fork 或以此為範本建立你自己的 repo**(建議設為 private,
-   你的文件內容不一定適合公開)。
+1. **按右上角綠色的「Use this template」建立你自己的 repo**,
+   並**設為 private**——你的社團文件與研究計畫內容不適合公開。
+   (不建議用 Fork:公開 repo 的 fork 會被強制維持公開,無法轉 private。)
 2. 讀完 [CLAUDE.md](CLAUDE.md)——這是整個架構的核心,
    Claude Code 在這個 repo 工作時會自動遵守它。
 3. 把你的文件放進對應目錄,各目錄的 `README.md` 有該用途的治理要點。
