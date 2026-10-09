@@ -24,8 +24,7 @@
    這個範本(Use this template)建立我自己的 private repo,
    並把它抓到我的電腦、在那個資料夾開始工作。
    你能直接做的就幫我做;做不到的,一步一步教我在網頁上完成。
-   如果你是 Codex,另在資料夾建立 AGENTS.md,只寫一行:
-   本 repo 的規範見 CLAUDE.md,開工前先讀並遵守。」
+   如果你是 Codex,把 CLAUDE.md 改名為 AGENTS.md(內容不改)。」
 
    (不建議用 Fork:公開 repo 的 fork 會被強制維持公開。)
 2. 讀完 [CLAUDE.md](CLAUDE.md)——這是整個架構的核心,
@@ -36,7 +35,7 @@
 
 ## 更新紀錄
 
-- 2026-10-09:快速開始第 1 步改為「貼給 Claude 或 Codex 的一段話」,由 AI 協助以 Use this template 建立 private repo 並抓到電腦;只用 Codex 的人由同一段話建立 AGENTS.md。
+- 2026-10-09:快速開始第 1 步改為「貼給 Claude 或 Codex 的一段話」,由 AI 協助以 Use this template 建立 private repo 並抓到電腦;只用 Codex 的人由同一段話把 CLAUDE.md 改名為 AGENTS.md。
 - 2026-10-05:CLAUDE.md〈三、刪除規則〉新增一條:`LICENSE` 與 README〈授權與致謝〉不得刪除或修改(README 其他內容可改寫)。已用本範本建立 repo 的人,需要的話對照自行加入。
 - 2026-10-04:[治理擴增指南](治理擴增指南.md)新增「隨時可加:兩條小規則」(刪除前判斷原始檔、決策紀錄登錄門檻),階段一補「引用文獻回原文核對」。已用本範本建立 repo 的人,範本更新不會自動同步到你的 repo,需要的話對照自行加入。
 
