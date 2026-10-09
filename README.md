@@ -21,8 +21,11 @@
 1. **建立你自己的 repo,並設為 private**——你的社團文件與研究計畫內容不適合公開。兩種做法擇一:
    - 在 GitHub 網頁按右上角綠色的「Use this template」
      (不建議用 Fork:公開 repo 的 fork 會被強制維持公開,無法轉 private。)
-     建好後把它抓到自己電腦:用 [GitHub Desktop](https://desktop.github.com/)
-     選 File → Clone repository,或在終端機執行 `git clone <你的 repo 網址>`。
+     建好後把它抓到自己電腦:建議用 [GitHub Desktop](https://desktop.github.com/),
+     登入 GitHub 後選 File → Clone repository,選剛建的 repo。
+     熟悉終端機的人也可用 `git clone <你的 repo 網址>`,
+     但 private repo 要先登入 GitHub(例如執行 `gh auth login`),
+     否則會要求帳密而失敗。
      之後在終端機用 `cd` 進入該資料夾,打 `claude` 啟動 Claude Code
      (桌面版則在新對話選擇該資料夾)。
    - 用 Claude Code 安裝 [doc-governance](https://github.com/SynchronicEros/claude-code-doc-governance-zh),
@@ -30,17 +33,23 @@
      要放上 GitHub 時再建 private repo。
 2. 讀完 [CLAUDE.md](CLAUDE.md)——這是整個架構的核心,
    Claude Code 在這個 repo 工作時會自動遵守它。
-   只用 Codex(不用 Claude Code)的人:用第 1 步的第一種做法建 repo 並抓到電腦,
-   在該資料夾開 Codex。Codex 讀的是 `AGENTS.md`。
-   在 repo 根目錄建一個 `AGENTS.md`,只寫一行
-   「本 repo 的規範見 CLAUDE.md,開工前先讀並遵守」,
-   規範只維護 `CLAUDE.md` 一份;裡面寫「Claude Code」之處,對 Codex 一樣適用。
 3. 把你的文件放進對應目錄,各目錄的 `README.md` 有該用途的治理要點。
 4. 遇到重要決定,記進 [決策紀錄.md](決策紀錄.md)。
 5. 架構不夠用了,照 [治理擴增指南](治理擴增指南.md) 升級。
 
+### 只用 Codex(不用 Claude Code)的人
+
+1. 用快速開始第 1 步的第一種做法(Use this template 加 GitHub Desktop)
+   建 repo 並抓到電腦,在該資料夾開 Codex。
+2. 對 Codex 說:
+   「請在這個資料夾建立 AGENTS.md,內容只寫一行:
+   本 repo 的規範見 CLAUDE.md,開工前先讀並遵守。」
+3. 規範只維護 `CLAUDE.md` 一份;裡面寫「Claude Code」之處,
+   對 Codex 一樣適用。快速開始第 2–5 步照常進行。
+
 ## 更新紀錄
 
+- 2026-10-09:「只用 Codex 的人」獨立成一節;clone 建議新手用 GitHub Desktop。
 - 2026-10-09:快速開始補「用 doc-governance 在本機建立」與「只用 Codex 的人加 AGENTS.md」兩種做法。同日再補:用 Use this template 建立後如何抓到電腦並在資料夾啟動 Claude Code;Codex 使用者同走此路,CLAUDE.md 對 Codex 一樣適用。
 - 2026-10-05:CLAUDE.md〈三、刪除規則〉新增一條:`LICENSE` 與 README〈授權與致謝〉不得刪除或修改(README 其他內容可改寫)。已用本範本建立 repo 的人,需要的話對照自行加入。
 - 2026-10-04:[治理擴增指南](治理擴增指南.md)新增「隨時可加:兩條小規則」(刪除前判斷原始檔、決策紀錄登錄門檻),階段一補「引用文獻回原文核對」。已用本範本建立 repo 的人,範本更新不會自動同步到你的 repo,需要的話對照自行加入。
