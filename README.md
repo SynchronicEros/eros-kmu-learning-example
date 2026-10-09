@@ -18,43 +18,25 @@
 
 ## 快速開始
 
-1. **建立你自己的 repo,並設為 private**——你的社團文件與研究計畫內容不適合公開。兩種做法擇一:
-   - 在 GitHub 網頁按右上角綠色的「Use this template」
-     (不建議用 Fork:公開 repo 的 fork 會被強制維持公開,無法轉 private。)
-     建好後把它抓到自己電腦:建議用 [GitHub Desktop](https://desktop.github.com/),
-     登入 GitHub 後選 File → Clone repository,選剛建的 repo。
-     熟悉終端機的人也可用 `git clone <你的 repo 網址>`,
-     但 private repo 要先登入 GitHub(例如執行 `gh auth login`),
-     否則會要求帳密而失敗。
-     之後在 GitHub Desktop 選 Repository → Open in Terminal
-     (Windows 會開 PowerShell 或命令提示字元),打 `claude` 啟動 Claude Code
-     (桌面版則在新對話選擇該資料夾)。
-   - 用 Claude Code 安裝 [doc-governance](https://github.com/SynchronicEros/claude-code-doc-governance-zh),
-     在本機資料夾對 Claude 說「建立治理架構」。用這個方式的人本步已完成;
-     要放上 GitHub 時再建 private repo。
+1. **建立你自己的 repo,並設為 private**。把下面這段話貼給 Claude 或 Codex:
+
+   「請幫我用 https://github.com/SynchronicEros/eros-kmu-learning-example
+   這個範本(Use this template)建立我自己的 private repo,
+   並把它抓到我的電腦、在那個資料夾開始工作。
+   你能直接做的就幫我做;做不到的,一步一步教我在網頁上完成。
+   如果你是 Codex,另在資料夾建立 AGENTS.md,只寫一行:
+   本 repo 的規範見 CLAUDE.md,開工前先讀並遵守。」
+
+   (不建議用 Fork:公開 repo 的 fork 會被強制維持公開。)
 2. 讀完 [CLAUDE.md](CLAUDE.md)——這是整個架構的核心,
    Claude Code 在這個 repo 工作時會自動遵守它。
 3. 把你的文件放進對應目錄,各目錄的 `README.md` 有該用途的治理要點。
 4. 遇到重要決定,記進 [決策紀錄.md](決策紀錄.md)。
 5. 架構不夠用了,照 [治理擴增指南](治理擴增指南.md) 升級。
 
-### 只用 Codex(不用 Claude Code)的人
-
-1. 用快速開始第 1 步的第一種做法(Use this template 加 GitHub Desktop)
-   建 repo 並抓到電腦,在該資料夾開 Codex:
-   Codex App 開啟時選擇該資料夾;用終端機版的人,在 GitHub Desktop
-   選 Repository → Open in Terminal,再打 `codex`。
-2. 對 Codex 說:
-   「請在這個資料夾建立 AGENTS.md,內容只寫一行:
-   本 repo 的規範見 CLAUDE.md,開工前先讀並遵守。」
-3. 規範只維護 `CLAUDE.md` 一份;裡面寫「Claude Code」之處,
-   對 Codex 一樣適用。快速開始第 2–5 步照常進行。
-
 ## 更新紀錄
 
-- 2026-10-09:clone 後改從 GitHub Desktop 開終端機;「只用 Codex 的人」補 Codex 開法。
-- 2026-10-09:「只用 Codex 的人」獨立成一節;clone 建議新手用 GitHub Desktop。
-- 2026-10-09:快速開始補「用 doc-governance 在本機建立」與「只用 Codex 的人加 AGENTS.md」兩種做法。同日再補:用 Use this template 建立後如何抓到電腦並在資料夾啟動 Claude Code;Codex 使用者同走此路,CLAUDE.md 對 Codex 一樣適用。
+- 2026-10-09:快速開始第 1 步改為「貼給 Claude 或 Codex 的一段話」,由 AI 協助以 Use this template 建立 private repo 並抓到電腦;只用 Codex 的人由同一段話建立 AGENTS.md。
 - 2026-10-05:CLAUDE.md〈三、刪除規則〉新增一條:`LICENSE` 與 README〈授權與致謝〉不得刪除或修改(README 其他內容可改寫)。已用本範本建立 repo 的人,需要的話對照自行加入。
 - 2026-10-04:[治理擴增指南](治理擴增指南.md)新增「隨時可加:兩條小規則」(刪除前判斷原始檔、決策紀錄登錄門檻),階段一補「引用文獻回原文核對」。已用本範本建立 repo 的人,範本更新不會自動同步到你的 repo,需要的話對照自行加入。
 
