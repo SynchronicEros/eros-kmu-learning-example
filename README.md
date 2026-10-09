@@ -26,7 +26,8 @@
      熟悉終端機的人也可用 `git clone <你的 repo 網址>`,
      但 private repo 要先登入 GitHub(例如執行 `gh auth login`),
      否則會要求帳密而失敗。
-     之後在終端機用 `cd` 進入該資料夾,打 `claude` 啟動 Claude Code
+     之後在 GitHub Desktop 選 Repository → Open in Terminal
+     (Windows 會開 PowerShell 或命令提示字元),打 `claude` 啟動 Claude Code
      (桌面版則在新對話選擇該資料夾)。
    - 用 Claude Code 安裝 [doc-governance](https://github.com/SynchronicEros/claude-code-doc-governance-zh),
      在本機資料夾對 Claude 說「建立治理架構」。用這個方式的人本步已完成;
@@ -40,7 +41,9 @@
 ### 只用 Codex(不用 Claude Code)的人
 
 1. 用快速開始第 1 步的第一種做法(Use this template 加 GitHub Desktop)
-   建 repo 並抓到電腦,在該資料夾開 Codex。
+   建 repo 並抓到電腦,在該資料夾開 Codex:
+   Codex App 開啟時選擇該資料夾;用終端機版的人,在 GitHub Desktop
+   選 Repository → Open in Terminal,再打 `codex`。
 2. 對 Codex 說:
    「請在這個資料夾建立 AGENTS.md,內容只寫一行:
    本 repo 的規範見 CLAUDE.md,開工前先讀並遵守。」
@@ -49,6 +52,7 @@
 
 ## 更新紀錄
 
+- 2026-10-09:clone 後改從 GitHub Desktop 開終端機;「只用 Codex 的人」補 Codex 開法。
 - 2026-10-09:「只用 Codex 的人」獨立成一節;clone 建議新手用 GitHub Desktop。
 - 2026-10-09:快速開始補「用 doc-governance 在本機建立」與「只用 Codex 的人加 AGENTS.md」兩種做法。同日再補:用 Use this template 建立後如何抓到電腦並在資料夾啟動 Claude Code;Codex 使用者同走此路,CLAUDE.md 對 Codex 一樣適用。
 - 2026-10-05:CLAUDE.md〈三、刪除規則〉新增一條:`LICENSE` 與 README〈授權與致謝〉不得刪除或修改(README 其他內容可改寫)。已用本範本建立 repo 的人,需要的話對照自行加入。
